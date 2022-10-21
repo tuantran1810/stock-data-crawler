@@ -25,7 +25,7 @@ def main():
         data = pytrends.interest_over_time()
         data = data.reset_index()
         data.to_csv(daily_file)
-        time.sleep(10)
+        time.sleep(12)
 
 if __name__ == '__main__':
     main()
