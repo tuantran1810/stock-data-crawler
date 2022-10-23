@@ -1,1 +1,4 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1319043600,10000000.0,2011-10-20,"Niêm yết cổ phiếu lần đầu - 10,000,000 CP"
+1,1320253200,10000000.0,2011-11-03,"Giao dịch lần đầu - 10,000,000 CP"
+2,1650387600,,2022-04-20,Đưa cổ phiếu vào diện kiểm soát

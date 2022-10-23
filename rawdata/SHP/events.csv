@@ -1,2 +1,7 @@
-,timestamp,delta_volume,date
-0,1645722000,7496152,2022-02-25
+,timestamp,delta_volume,date,note
+0,1349802000,8398856.0,2012-10-10,"Giao dịch bổ sung - 8,398,856 CP"
+1,1405011600,,2014-07-11,Hủy niêm yết cổ phiếu
+2,1405875600,93710200.0,2014-07-21,"Giao dịch lần đầu - 93,710,200 CP"
+3,1405875600,,2014-07-21,Giao dịch trở lại sàn HOSE
+4,1645722000,7496152.0,2022-02-25,"Niêm yết cổ phiếu bổ sung - 7,496,152 CP"
+5,1647277200,7496152.0,2022-03-15,"Giao dịch bổ sung - 7,496,152 CP"

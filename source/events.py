@@ -16,25 +16,24 @@ import json
 #   -H 'Sec-Fetch-Site: same-origin' \
 #   -H 'Sec-Fetch-Mode: cors' \
 #   -H 'Sec-Fetch-Dest: empty' \
-#   -H 'Referer: https://finance.vietstock.vn/lich-su-kien.htm?page=1&tab=2&code=HPG&group=21' \
+#   -H 'Referer: https://finance.vietstock.vn/lich-su-kien.htm?page=2&tab=2&code=AAA' \
 #   -H 'Accept-Language: en-US,en;q=0.9' \
-#   -H 'Cookie: _ga=GA1.2.1461040072.1664899465; Theme=Light; AnonymousNotification=; _gid=GA1.2.1218471786.1666446518; ASP.NET_SessionId=wsak3ffz1i5mljrwxhasqum4; __RequestVerificationToken=gHf8v1cAVtyFGsB-iyzVApk6jXQ6JnXu7hS18ffwVE2jZGkJ7rmtlO3Lt3jdq40FPsru8oor4zneE9ulhC1CGakQ4KqzULFriEdYUawjEcM1; language=vi-VN; finance_viewedstock=HPG,PTN,GIL,; _gat_UA-1460625-2=1; _gat_gtag_UA_1460625_2=1' \
-#   --data-raw 'eventTypeID=2&channelID=21&code=HPG&catID=&fDate=&tDate=&page=1&pageSize=50&orderBy=Date1&orderDir=DESC&__RequestVerificationToken=3yP4-KKkkl8leSGWZhhqmxo0WIqhCekg3E_6LDV2dCve1xanz95zt1Nlq4eku8-u9IBYiXqKoizGdAuow8j18qZPmjY4y4Ic77oh8JrxPxg1' \
+#   -H 'Cookie: _ga=GA1.2.1461040072.1664899465; Theme=Light; AnonymousNotification=; _gid=GA1.2.1218471786.1666446518; language=vi-VN; ASP.NET_SessionId=lrecevyl5mll3m3h5i5a2joe; __RequestVerificationToken=f5pHNETdKpCuaWZQMCPyNt6uaKRSMH31wdkWU0ew2_-J0W3aMHBL_6N_m58yBxATUT6rWGmv4qT8bTsAZHFbzs7wKwGj85u1G1bpeTEuc6s1; finance_viewedstock=AAA,AAM,ABT,' \
+#   --data-raw 'eventTypeID=2&channelID=0&code=AAA&catID=&fDate=&tDate=&page=1&pageSize=20&orderBy=Date1&orderDir=DESC&__RequestVerificationToken=TpiOFuRHKSlQGxLBu4pyF6uYWDEKMYufqDm8wIIOBKx5szMB0WdYMlT4rfa8MjTko1chmXCn1qvNU6yZuj2ikDlRFHEe19-UOkfJ83wn9G41' \
 #   --compressed
 
 class EventsLoader():
     def __init__(self):
         self.__url = 'https://finance.vietstock.vn/data/eventstypedata'
         self.__header = {
-            'Cookie': '_ga=GA1.2.1461040072.1664899465; Theme=Light; AnonymousNotification=; _gid=GA1.2.1218471786.1666446518; ASP.NET_SessionId=wsak3ffz1i5mljrwxhasqum4; __RequestVerificationToken=gHf8v1cAVtyFGsB-iyzVApk6jXQ6JnXu7hS18ffwVE2jZGkJ7rmtlO3Lt3jdq40FPsru8oor4zneE9ulhC1CGakQ4KqzULFriEdYUawjEcM1; language=vi-VN; finance_viewedstock=HPG,PTN,GIL,; _gat_UA-1460625-2=1; _gat_gtag_UA_1460625_2=1',
+            'Cookie': '_ga=GA1.2.1461040072.1664899465; Theme=Light; AnonymousNotification=; _gid=GA1.2.1218471786.1666446518; language=vi-VN; ASP.NET_SessionId=lrecevyl5mll3m3h5i5a2joe; __RequestVerificationToken=f5pHNETdKpCuaWZQMCPyNt6uaKRSMH31wdkWU0ew2_-J0W3aMHBL_6N_m58yBxATUT6rWGmv4qT8bTsAZHFbzs7wKwGj85u1G1bpeTEuc6s1; finance_viewedstock=AAA,AAM,ABT,',
             'Accept': '*/*',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             'X-Requested-With': 'XMLHttpRequest',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
             'Accept-Language': 'en-US,en;q=0.9',
         }
-        self.__query_fmt = 'eventTypeID=2&channelID=21&code={}&catID=&fDate=&tDate=&page={}&pageSize=50&orderBy=Date1&orderDir=DESC&__RequestVerificationToken=3yP4-KKkkl8leSGWZhhqmxo0WIqhCekg3E_6LDV2dCve1xanz95zt1Nlq4eku8-u9IBYiXqKoizGdAuow8j18qZPmjY4y4Ic77oh8JrxPxg1'
-        return
+        self.__query_fmt = 'eventTypeID=2&channelID=0&code={}&catID=&fDate=&tDate=&page={}&pageSize=50&orderBy=Date1&orderDir=DESC&__RequestVerificationToken=TpiOFuRHKSlQGxLBu4pyF6uYWDEKMYufqDm8wIIOBKx5szMB0WdYMlT4rfa8MjTko1chmXCn1qvNU6yZuj2ikDlRFHEe19-UOkfJ83wn9G41'
 
     def __get_vietstock_data(self, code, page):
         response = requests.post(self.__url, headers=self.__header, data=self.__query_fmt.format(code, page))
@@ -47,18 +46,20 @@ class EventsLoader():
         rows, count = data[0], data[1][0]
         all_items = list()
         for row in rows:
-            date_ctgd = row['DateCTGD']
-            if date_ctgd is not None:
-                # lấy ngày niêm yết thôi
-                continue
+            # date_ctgd = row['DateCTGD']
+            # if date_ctgd is not None:
+            #     # lấy ngày niêm yết thôi
+            #     continue
             volume = row["Volume"]
+            note = row["Note"]
 
             timestamp = int(row['DateOrder'][6:-5])
             date = datetime.fromtimestamp(timestamp, tz=timezone(timedelta(hours=7)))
             item = {
                 'timestamp': timestamp,
                 'delta_volume': volume,
-                'date': '{}-{:02d}-{:02d}'.format(date.year, date.month, date.day)
+                'date': '{}-{:02d}-{:02d}'.format(date.year, date.month, date.day),
+                'note': note,
             }
             all_items.append(item)
         last_row = rows[-1]
@@ -82,5 +83,5 @@ class EventsLoader():
 
 if __name__ == '__main__':
     loader = EventsLoader()
-    data = loader.get_vietstock_data('FPT')
+    data = loader.get_vietstock_data('AAA')
     print(data)

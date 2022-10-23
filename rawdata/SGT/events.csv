@@ -1,4 +1,19 @@
-,timestamp,delta_volume,date
-0,1216227600,13500000,2008-07-17
-1,1248800400,8774998,2009-07-29
-2,1282150800,6726916,2010-08-19
+,timestamp,delta_volume,date,note
+0,1216227600,13500000.0,2008-07-17,"Niêm yết cổ phiếu bổ sung - 13,500,000 CP"
+1,1216227600,13500000.0,2008-07-17,"Giao dịch bổ sung - 13,500,000 CP"
+2,1248800400,8774998.0,2009-07-29,"Niêm yết cổ phiếu bổ sung - 8,774,998 CP"
+3,1248800400,8774998.0,2009-07-29,"Giao dịch bổ sung - 8,774,998 CP"
+4,1282150800,6726916.0,2010-08-19,"Niêm yết cổ phiếu bổ sung - 6,726,916 CP"
+5,1282150800,6726916.0,2010-08-19,"Giao dịch bổ sung - 6,726,916 CP"
+6,1334250000,,2012-04-13,Đưa vào diện cảnh báo
+7,1368032400,,2013-05-09,Đưa cổ phiếu vào diện cảnh báo
+8,1369328400,,2013-05-24,Đưa cổ phiếu vào diện kiểm soát
+9,1374512400,,2013-07-23,Đưa cổ phiếu vào diện tạm ngừng giao dịch
+10,1381338000,,2013-10-10,Đưa cổ phiếu vào diện cảnh báo
+11,1381338000,,2013-10-10,Đưa cổ phiếu ra khỏi diện tạm ngừng giao dịch
+12,1390150800,,2014-01-20,Đưa cổ phiếu vào diện kiểm soát đặc biệt
+13,1390150800,,2014-01-20,Đưa cổ phiếu ra khỏi diện cảnh báo
+14,1441904400,,2015-09-11,Đưa cổ phiếu vào diện cảnh báo
+15,1441904400,,2015-09-11,Đưa cổ phiếu ra khỏi diện kiểm soát đặc biệt
+16,1472403600,,2016-08-29,Tiếp tục giữ nguyên diện cảnh báo
+17,1554310800,,2019-04-04,Đưa cổ phiếu ra khỏi diện cảnh báo

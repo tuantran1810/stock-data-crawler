@@ -1,2 +1,9 @@
-,timestamp,delta_volume,date
-0,1170003600,1500000,2007-01-29
+,timestamp,delta_volume,date,note
+0,1170003600,1500000.0,2007-01-29,"Niêm yết cổ phiếu bổ sung - 1,500,000 CP"
+1,1170003600,1500000.0,2007-01-29,"Giao dịch bổ sung - 1,500,000 CP"
+2,1243270800,5000000.0,2009-05-26,"Niêm yết cổ phiếu lần đầu - 5,000,000 CP"
+3,1243789200,,2009-06-01,Giao dịch trở lại sàn HNX
+4,1243789200,,2009-06-01,Hủy niêm yết cổ phiếu
+5,1244739600,5000000.0,2009-06-12,"Giao dịch lần đầu - 5,000,000 CP"
+6,1554310800,,2019-04-04,Đưa cổ phiếu vào diện cảnh báo
+7,1566493200,,2019-08-23,Đưa cổ phiếu ra khỏi diện cảnh báo

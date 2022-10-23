@@ -1,1 +1,5 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1499274000,20693437.0,2017-07-06,"Niêm yết cổ phiếu lần đầu - 20,693,437 CP"
+1,1501434000,20693437.0,2017-07-31,"Giao dịch lần đầu - 20,693,437 CP"
+2,1649350800,,2022-04-08,Đưa cổ phiếu vào diện cảnh báo
+3,1661187600,,2022-08-23,Đưa cổ phiếu ra khỏi diện cảnh báo

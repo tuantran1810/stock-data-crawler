@@ -1,2 +1,5 @@
-,timestamp,delta_volume,date
-0,1362502800,1170000,2013-03-06
+,timestamp,delta_volume,date,note
+0,1362502800,1170000.0,2013-03-06,"Niêm yết cổ phiếu bổ sung - 1,170,000 CP"
+1,1362502800,1170000.0,2013-03-06,"Giao dịch bổ sung - 1,170,000 CP"
+2,1428598800,,2015-04-10,Đưa cổ phiếu vào diện cảnh báo
+3,1440090000,,2015-08-21,Đưa cổ phiếu ra khỏi diện cảnh báo

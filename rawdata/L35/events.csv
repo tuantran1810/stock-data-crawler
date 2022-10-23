@@ -1,1 +1,3 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1616432400,,2021-03-23,Đưa cổ phiếu vào diện cảnh báo
+1,1648141200,,2022-03-25,Đưa cổ phiếu vào diện kiểm soát

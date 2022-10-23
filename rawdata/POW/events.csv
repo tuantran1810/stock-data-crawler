@@ -1,1 +1,7 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1519664400,467802523.0,2018-02-27,"Niêm yết cổ phiếu lần đầu - 467,802,523 CP"
+1,1520269200,467802523.0,2018-03-06,"Giao dịch lần đầu - 467,802,523 CP"
+2,1544979600,2341871600.0,2018-12-17,"Niêm yết cổ phiếu lần đầu - 2,341,871,600 CP"
+3,1545843600,,2018-12-27,Giao dịch trở lại trên sàn HOSE
+4,1545843600,,2018-12-27,Hủy niêm yết cổ phiếu
+5,1547398800,2341871600.0,2019-01-14,"Giao dịch lần đầu - 2,341,871,600 CP"

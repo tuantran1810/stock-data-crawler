@@ -1,1 +1,3 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1546794000,7253911,2019-01-07,"Niêm yết cổ phiếu lần đầu - 7,253,911 CP"
+1,1552410000,7253911,2019-03-13,"Giao dịch lần đầu - 7,253,911 CP"

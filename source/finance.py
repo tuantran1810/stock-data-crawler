@@ -1,5 +1,4 @@
 ﻿from curses import meta
-import requests
 import pandas as pd
 import logging as logging
 import requests

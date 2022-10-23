@@ -1,2 +1,10 @@
-,timestamp,delta_volume,date
-0,1523379600,557729,2018-04-11
+,timestamp,delta_volume,date,note
+0,1481734800,5577300.0,2016-12-15,"Niêm yết cổ phiếu lần đầu - 5,577,300 CP"
+1,1484154000,5577300.0,2017-01-12,"Giao dịch lần đầu - 5,577,300 CP"
+2,1500829200,,2017-07-24,Đưa cổ phiếu vào diện cảnh báo
+3,1523379600,557729.0,2018-04-11,"Niêm yết cổ phiếu bổ sung - 557,729 CP"
+4,1525971600,557729.0,2018-05-11,"Giao dịch bổ sung - 557,729 CP"
+5,1544461200,,2018-12-11,Đưa cổ phiếu vào diện kiểm soát
+6,1578589200,,2020-01-10,Đưa cổ phiếu vào diện cảnh báo
+7,1578589200,,2020-01-10,Đưa cổ phiếu ra khỏi diện kiểm soát
+8,1649350800,,2022-04-08,Đưa cổ phiếu ra khỏi diện cảnh báo

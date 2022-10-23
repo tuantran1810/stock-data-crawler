@@ -1,1 +1,4 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1404320400,5000000.0,2014-07-03,"Niêm yết cổ phiếu lần đầu - 5,000,000 CP"
+1,1411578000,5000000.0,2014-09-25,"Giao dịch lần đầu - 5,000,000 CP"
+2,1648054800,,2022-03-24,Đưa cổ phiếu vào diện cảnh báo

@@ -1,2 +1,3 @@
-,timestamp,delta_volume,date
-0,1284397200,3000000,2010-09-14
+,timestamp,delta_volume,date,note
+0,1284397200,3000000,2010-09-14,"Niêm yết cổ phiếu bổ sung - 3,000,000 CP"
+1,1285606800,3000000,2010-09-28,"Giao dịch bổ sung - 3,000,000 CP"

@@ -1,2 +1,3 @@
-,timestamp,delta_volume,date
-0,1200330000,1992250,2008-01-15
+,timestamp,delta_volume,date,note
+0,1200330000,1992250,2008-01-15,"Niêm yết cổ phiếu bổ sung - 1,992,250 CP"
+1,1201194000,1992250,2008-01-25,"Giao dịch bổ sung - 1,992,250 CP"

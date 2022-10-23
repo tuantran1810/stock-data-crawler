@@ -1,2 +1,3 @@
-,timestamp,delta_volume,date
-0,1476896400,1274815,2016-10-20
+,timestamp,delta_volume,date,note
+0,1476896400,1274815,2016-10-20,"Niêm yết cổ phiếu bổ sung - 1,274,815 CP"
+1,1478451600,1274815,2016-11-07,"Giao dịch bổ sung - 1,274,815 CP"

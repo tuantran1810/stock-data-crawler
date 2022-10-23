@@ -1,2 +1,7 @@
-,timestamp,delta_volume,date
-0,1433869200,2600000,2015-06-10
+,timestamp,delta_volume,date,note
+0,1361293200,,2013-02-20,Đưa cổ phiếu vào diện cảnh báo
+1,1395248400,,2014-03-20,Đưa cổ phiếu ra khỏi diện cảnh báo
+2,1433869200,2600000.0,2015-06-10,"Niêm yết cổ phiếu bổ sung - 2,600,000 CP"
+3,1435078800,2600000.0,2015-06-24,"Giao dịch bổ sung - 2,600,000 CP"
+4,1584550800,,2020-03-19,Đưa cổ phiếu vào diện cảnh báo
+5,1629738000,,2021-08-24,Đưa cổ phiếu ra khỏi diện cảnh báo

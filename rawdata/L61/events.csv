@@ -1,2 +1,5 @@
-,timestamp,delta_volume,date
-0,1479142800,561200,2016-11-15
+,timestamp,delta_volume,date,note
+0,1479142800,561200.0,2016-11-15,"Niêm yết cổ phiếu bổ sung - 561,200 CP"
+1,1480352400,561200.0,2016-11-29,"Giao dịch bổ sung - 561,200 CP"
+2,1617642000,,2021-04-06,Đưa cổ phiếu vào diện cảnh báo
+3,1649350800,,2022-04-08,Đưa cổ phiếu ra khỏi diện cảnh báo

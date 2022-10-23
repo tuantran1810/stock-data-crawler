@@ -1,1 +1,5 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1507222800,10900000.0,2017-10-06,"Niêm yết cổ phiếu lần đầu - 10,900,000 CP"
+1,1510074000,,2017-11-08,Giao dịch trở lại trên HNX
+2,1510074000,,2017-11-08,Hủy niêm yết cổ phiếu
+3,1510592400,10900000.0,2017-11-14,"Giao dịch lần đầu - 10,900,000 CP"

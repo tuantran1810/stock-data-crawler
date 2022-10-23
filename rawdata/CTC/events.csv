@@ -1,2 +1,11 @@
-,timestamp,delta_volume,date
-0,1609952400,7000000,2021-01-07
+,timestamp,delta_volume,date,note
+0,1398186000,,2014-04-23,Đưa cổ phiếu vào diện cảnh báo
+1,1410109200,,2014-09-08,Đưa cổ phiếu ra khỏi diện cảnh báo
+2,1492707600,,2017-04-21,Đưa cổ phiếu vào diện cảnh báo
+3,1513270800,,2017-12-15,Đưa cổ phiếu vào diện kiểm soát
+4,1529600400,,2018-06-22,Đưa cổ phiếu ra khỏi diện kiểm soát
+5,1587661200,,2020-04-24,Đưa cổ phiếu vào diện kiểm soát
+6,1609952400,7000000.0,2021-01-07,"Niêm yết cổ phiếu bổ sung - 7,000,000 CP"
+7,1615309200,7000000.0,2021-03-10,"Giao dịch bổ sung - 7,000,000 CP"
+8,1619629200,,2021-04-29,Đưa cổ phiếu vào diện cảnh báo
+9,1619629200,,2021-04-29,Đưa cổ phiếu ra khỏi diện kiểm soát

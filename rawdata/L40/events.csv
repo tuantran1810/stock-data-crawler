@@ -1,1 +1,3 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1608483600,3600000,2020-12-21,"Niêm yết cổ phiếu lần đầu - 3,600,000 CP"
+1,1611680400,3600000,2021-01-27,"Giao dịch lần đầu - 3,600,000 CP"

@@ -1,2 +1,7 @@
-,timestamp,delta_volume,date
-0,1312736400,989031,2011-08-08
+,timestamp,delta_volume,date,note
+0,1294160400,9900000.0,2011-01-05,"Niêm yết cổ phiếu lần đầu - 9,900,000 CP"
+1,1294765200,9900000.0,2011-01-12,"Giao dịch lần đầu - 9,900,000 CP"
+2,1312736400,989031.0,2011-08-08,"Niêm yết cổ phiếu bổ sung - 989,031 CP"
+3,1312736400,989031.0,2011-08-08,"Niêm yết cổ phiếu bổ sung - 989,031 CP"
+4,1428512400,,2015-04-09,Đưa cổ phiếu vào diện cảnh báo
+5,1492534800,,2017-04-19,Đưa cổ phiếu ra khỏi diện cảnh báo

@@ -1,1 +1,6 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1359046800,15000000.0,2013-01-25,"Giao dịch bổ sung - 15,000,000 CP"
+1,1490634000,,2017-03-28,Đưa cổ phiếu vào diện cảnh báo
+2,1503594000,,2017-08-25,Đưa cổ phiếu ra khỏi diện cảnh báo
+3,1523379600,,2018-04-11,Đưa cổ phiếu vào diện kiểm soát
+4,1553792400,,2019-03-29,Đưa cổ phiếu ra khỏi diện kiểm soát

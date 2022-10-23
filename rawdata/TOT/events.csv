@@ -1,1 +1,7 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1499274000,5495000.0,2017-07-06,"Niêm yết cổ phiếu lần đầu - 5,495,000 CP"
+1,1500224400,5495000.0,2017-07-17,"Giao dịch lần đầu - 5,495,000 CP"
+2,1640019600,5495000.0,2021-12-21,"Niêm yết cổ phiếu lần đầu - 5,495,000 CP"
+3,1641488400,,2022-01-07,Giao dịch trở lại HNX
+4,1641488400,,2022-01-07,Hủy niêm yết cổ phiếu
+5,1642611600,5495000.0,2022-01-20,"Giao dịch lần đầu - 5,495,000 CP"

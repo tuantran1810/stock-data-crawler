@@ -1,1 +1,9 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1284483600,100000000.0,2010-09-15,"Niêm yết cổ phiếu lần đầu - 100,000,000 CP"
+1,1285088400,100000000.0,2010-09-22,"Giao dịch lần đầu - 100,000,000 CP"
+2,1364922000,,2013-04-03,Đưa cổ phiếu vào diện cảnh báo
+3,1397149200,,2014-04-11,Đưa cổ phiếu vào diện kiểm soát
+4,1429203600,,2015-04-17,Đưa cổ phiếu vào diện cảnh báo
+5,1467219600,,2016-06-30,Tiếp tục giữ nguyên diện cảnh báo
+6,1492621200,,2017-04-20,Đưa cổ phiếu vào diện kiểm soát
+7,1657558800,,2022-07-12,Đưa cổ phiếu vào diện cảnh báo

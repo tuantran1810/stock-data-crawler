@@ -1,2 +1,5 @@
-,timestamp,delta_volume,date
-0,1460998800,3633009,2016-04-19
+,timestamp,delta_volume,date,note
+0,1284656400,8450000,2010-09-17,"Niêm yết cổ phiếu lần đầu - 8,450,000 CP"
+1,1288026000,8450000,2010-10-26,"Giao dịch lần đầu - 8,450,000 CP"
+2,1460998800,3633009,2016-04-19,"Niêm yết cổ phiếu bổ sung - 3,633,009 CP"
+3,1461603600,3633009,2016-04-26,"Giao dịch bổ sung - 3,633,009 CP"

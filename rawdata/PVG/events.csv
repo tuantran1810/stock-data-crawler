@@ -1,2 +1,5 @@
-,timestamp,delta_volume,date
-0,1564678800,8780150,2019-08-02
+,timestamp,delta_volume,date,note
+0,1426611600,,2015-03-18,Đưa cổ phiếu vào diện cảnh báo
+1,1440090000,,2015-08-21,Đưa cổ phiếu ra khỏi diện cảnh báo
+2,1564678800,8780150.0,2019-08-02,"Niêm yết cổ phiếu bổ sung - 8,780,150 CP"
+3,1568826000,8780150.0,2019-09-19,"Giao dịch bổ sung - 8,780,150 CP"

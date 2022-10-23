@@ -1,1 +1,3 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1396803600,,2014-04-07,Đưa cổ phiếu vào diện cảnh báo
+1,1617123600,,2021-03-31,Đưa cổ phiếu ra khỏi diện cảnh báo

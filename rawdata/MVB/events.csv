@@ -1,1 +1,7 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1475168400,105000000.0,2016-09-30,"Niêm yết cổ phiếu lần đầu - 105,000,000 CP"
+1,1476378000,105000000.0,2016-10-14,"Giao dịch lần đầu - 105,000,000 CP"
+2,1598806800,105000000.0,2020-08-31,"Niêm yết cổ phiếu lần đầu - 105,000,000 CP"
+3,1602781200,,2020-10-16,Giao dịch trở lại sàn HNX
+4,1602781200,,2020-10-16,Hủy niêm yết cổ phiếu
+5,1603818000,105000000.0,2020-10-28,"Giao dịch lần đầu - 105,000,000 CP"

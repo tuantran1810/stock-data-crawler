@@ -1,1 +1,5 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1355158800,,2012-12-11,Giao dịch trở lại sàn HNX
+1,1355158800,,2012-12-11,Hủy niêm yết cổ phiếu
+2,1419958800,12500000.0,2014-12-31,"Niêm yết cổ phiếu lần đầu - 12,500,000 CP"
+3,1426611600,12500000.0,2015-03-18,"Giao dịch lần đầu - 12,500,000 CP"

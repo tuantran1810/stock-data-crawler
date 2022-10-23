@@ -1,2 +1,3 @@
-,timestamp,delta_volume,date
-0,1605027600,80000,2020-11-11
+,timestamp,delta_volume,date,note
+0,1605027600,80000,2020-11-11,"Niêm yết cổ phiếu bổ sung - 80,000 CP"
+1,1607014800,80000,2020-12-04,"Giao dịch bổ sung - 80,000 CP"

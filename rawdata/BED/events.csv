@@ -1,1 +1,3 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1254243600,3000000,2009-09-30,"Niêm yết cổ phiếu lần đầu - 3,000,000 CP"
+1,1256058000,3000000,2009-10-21,"Giao dịch lần đầu - 3,000,000 CP"

@@ -1,1 +1,2 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1347555600,18200000,2012-09-14,"Giao dịch lần đầu - 18,200,000 CP"

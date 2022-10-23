@@ -1,3 +1,18 @@
-,timestamp,delta_volume,date
-0,1456938000,17000000,2016-03-03
-1,1641920400,25500000,2022-01-12
+,timestamp,delta_volume,date,note
+0,1273770000,8500000.0,2010-05-14,"Niêm yết cổ phiếu lần đầu - 8,500,000 CP"
+1,1274374800,8500000.0,2010-05-21,"Giao dịch lần đầu - 8,500,000 CP"
+2,1365094800,,2013-04-05,Đưa cổ phiếu vào diện cảnh báo
+3,1378227600,,2013-09-04,Đưa cổ phiếu ra khỏi diện cảnh báo
+4,1397667600,,2014-04-17,Đưa cổ phiếu vào diện tạm ngừng giao dịch
+5,1399827600,,2014-05-12,Đưa cổ phiếu vào diện kiểm soát
+6,1399827600,,2014-05-12,Đưa cổ phiếu ra khỏi diện tạm ngừng giao dịch
+7,1411318800,,2014-09-22,Đưa cổ phiếu ra khỏi diện kiểm soát
+8,1428253200,,2015-04-06,Đưa cổ phiếu ra khỏi diện cảnh báo
+9,1456938000,17000000.0,2016-03-03,"Niêm yết cổ phiếu bổ sung - 17,000,000 CP"
+10,1457542800,17000000.0,2016-03-10,"Giao dịch bổ sung - 17,000,000 CP"
+11,1554742800,,2019-04-09,Đưa cổ phiếu vào diện cảnh báo
+12,1566493200,,2019-08-23,Đưa cổ phiếu ra khỏi diện cảnh báo
+13,1618246800,,2021-04-13,Đưa cổ phiếu vào diện cảnh báo
+14,1627491600,,2021-07-29,Đưa cổ phiếu ra khỏi diện cảnh báo
+15,1641920400,25500000.0,2022-01-12,"Niêm yết cổ phiếu bổ sung - 25,500,000 CP"
+16,1670950800,25500000.0,2022-12-14,"Giao dịch bổ sung - 25,500,000 CP"

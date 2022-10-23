@@ -22,7 +22,7 @@ def main():
         loader = EventsLoader()
         data = loader.get_vietstock_data(c)
         data.to_csv(output_file)
-        time.sleep(0.1)
+        # time.sleep(0.1)
 
 if __name__ == '__main__':
     main()

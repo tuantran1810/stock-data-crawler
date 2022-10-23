@@ -1,1 +1,4 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1242925200,3800000.0,2009-05-22,"Niêm yết cổ phiếu lần đầu - 3,800,000 CP"
+1,1243443600,,2009-05-28,Giao dịch trở lại sàn HNX
+2,1244394000,3800000.0,2009-06-08,"Giao dịch lần đầu - 3,800,000 CP"

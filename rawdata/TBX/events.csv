@@ -1,1 +1,4 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1586365200,,2020-04-09,Đưa cổ phiếu vào diện cảnh báo
+1,1617728400,,2021-04-07,Đưa cổ phiếu vào diện kiểm soát
+2,1629824400,,2021-08-25,Đưa cổ phiếu ra khỏi diện kiểm soát

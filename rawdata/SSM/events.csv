@@ -1,1 +1,5 @@
-,,timestamp,delta_volume,date
+,timestamp,delta_volume,date,note
+0,1523206800,,2018-04-09,Đưa cổ phiếu vào diện cảnh báo
+1,1554051600,,2019-04-01,Đưa cổ phiếu vào diện kiểm soát
+2,1565629200,,2019-08-13,Đưa cổ phiếu vào diện cảnh báo
+3,1565629200,,2019-08-13,Đưa cổ phiếu ra khỏi diện kiểm soát

@@ -1,2 +1,4 @@
-,timestamp,delta_volume,date
-0,1510678800,2000000,2017-11-15
+,timestamp,delta_volume,date,note
+0,1510678800,2000000.0,2017-11-15,"Niêm yết cổ phiếu bổ sung - 2,000,000 CP"
+1,1511974800,2000000.0,2017-11-30,"Giao dịch bổ sung - 2,000,000 CP"
+2,1586106000,,2020-04-06,Đưa cổ phiếu vào diện cảnh báo
