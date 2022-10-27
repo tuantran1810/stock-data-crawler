@@ -3,8 +3,8 @@ import pandas as pd
 from tqdm import tqdm
 
 input_finance_fmt = './rawdata/{}/finance.csv'
-output_quarterly_shares_fmt = './processed/shares_est/{}/shares_est.csv'
-output_folder_fmt = './processed/shares_est/{}'
+output_quarterly_shares_fmt = './processed/{}/shares_est.csv'
+output_folder_fmt = './processed/{}'
 
 def main():
     codes = None
