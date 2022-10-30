@@ -5,7 +5,7 @@ from tqdm import tqdm
 input_price_fmt = './rawdata/{}/price_daily.csv'
 input_quarterly_shares_fmt = './processed/{}/shares_est.csv'
 output_market_cap_quarterly_fmt = './processed/{}/market_cap_quarterly.csv'
-output_folder_fmt = './processed/shares_est/{}'
+output_folder_fmt = './processed/{}'
 
 valid_date = [('31', '3'), ('30', '6'), ('30', '9'), ('31', '12')]
 
@@ -15,7 +15,7 @@ def get_day_month_year(s: str):
 
 def month_year_to_quarter(month: str, year:str):
     m = int(month)
-    q = int((m+1)/3)
+    q = int((m+2)/3)
     return '{}Q{}'.format(year, q)
 
 def process(code: str):
