@@ -32,13 +32,16 @@ def process(code: str):
     value_match = price['value_match'].astype(float)
     value_reconcile = price['value_reconcile'].astype(float)
 
-    value = value_match + value_reconcile + 1
+    value = value_match + value_reconcile
 
     change_abs = np.abs(change_perc)
-    tmp = 10e6 * change_abs/value
     quarter = date.apply(date_string_to_quarter)
-    tmp = pd.concat({'quarter': quarter, 'amihud': tmp}, axis=1)
+    tmp = pd.concat({'quarter': quarter, 'value': value, 'change_abs': change_abs}, axis=1)
+    tmp = tmp[tmp['value'] > 0]
+    tmp['amihud'] = 10e6*(tmp['change_abs'] + 10e-12)/tmp['value']
+    tmp = tmp.drop(['value', 'change_abs'], axis=1)
     amihud_quarterly = tmp.groupby('quarter').mean()
+    amihud_quarterly['ln_amihud'] = np.log(amihud_quarterly['amihud'])
     amihud_quarterly.to_csv(output_file)
 
 def main():
@@ -51,5 +54,5 @@ def main():
         process(code)
 
 if __name__ == '__main__':
-    # main()
-    process('DGW')
+    main()
+    # process('HPG')
