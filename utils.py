@@ -3,6 +3,8 @@ import csv
 from tqdm import tqdm
 
 raw_events_fmt = './rawdata/{}/events.csv'
+shares_est_fmt = './processed/{}/shares_est.csv'
+stdv_fmt = './processed/{}/stdv.csv'
 quarterly_marker_cap_fmt = './rawdata/{}/price_daily.csv'
 
 def remove_file(path_fmt, codes):
@@ -49,7 +51,9 @@ def main():
     codes = [c[:3] for c in codes]
 
     # remove_file(raw_events_fmt, codes)
-    from_q3_2007(quarterly_marker_cap_fmt, codes)
+    # remove_file(shares_est_fmt, codes)
+    remove_file(stdv_fmt, codes)
+    # from_q3_2007(quarterly_marker_cap_fmt, codes)
 
 
 if __name__ == '__main__':

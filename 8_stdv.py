@@ -31,6 +31,8 @@ def process(code: str):
     quarter = date.apply(date_string_to_quarter)
     change_perc = price['change_perc2'].astype(float)
     tmp = pd.concat({'quarter': quarter, 'change_perc': change_perc}, axis=1)
+    tmp.replace([np.inf, -np.inf], np.nan, inplace=True)
+    tmp.dropna(inplace=True)
     change_perc_mean = tmp.groupby('quarter').mean()
     change_perc_mean = change_perc_mean.rename(columns={'change_perc': 'change_perc_mean'})
     change_perc_stdv = tmp.groupby('quarter').std()
@@ -50,4 +52,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # process('HPG')
+    # process('SJF')
