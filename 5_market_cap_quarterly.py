@@ -65,6 +65,14 @@ def process(code: str):
                 'price': lprice,
             }
             all_items[q_str] = item
+        elif month_year_to_quarter(lmonth, lyear) != month_year_to_quarter(month, year):
+            q_str = month_year_to_quarter(lmonth, lyear)
+            item = {
+                'date': ldate,
+                'quarter': q_str,
+                'price': lprice,
+            }
+            all_items[q_str] = item
         lday, lmonth, lyear, lprice, ldate = day, month, year, iprice, idate
 
     arr = list()

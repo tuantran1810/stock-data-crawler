@@ -9,7 +9,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
-import utils
+import src_utils as utils
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 URL_VND = utils.utils.URL_VND

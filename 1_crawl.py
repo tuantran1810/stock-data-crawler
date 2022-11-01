@@ -26,7 +26,7 @@ def main():
             start='2005-01-01',
             end='2022-09-30',
             minimal=False,
-            data_source='vnd',
+            data_source='cafe',
         )
         finance_dataloader = fn.FinanceLoader()
 

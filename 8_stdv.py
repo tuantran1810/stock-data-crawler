@@ -37,7 +37,7 @@ def process(code: str):
     change_perc_mean = change_perc_mean.rename(columns={'change_perc': 'change_perc_mean'})
     change_perc_stdv = tmp.groupby('quarter').std()
     change_perc_stdv = change_perc_stdv.rename(columns={'change_perc': 'change_perc_stdv'})
-    table = pd.merge(change_perc_mean, change_perc_stdv, on=['quarter', 'quarter'], how='inner')
+    table = pd.merge(change_perc_mean, change_perc_stdv, on=['quarter'], how='inner')
 
     table.to_csv(output_file)
 
