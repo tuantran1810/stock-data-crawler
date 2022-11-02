@@ -84,7 +84,7 @@ def main():
         output_tables.append(process(code))
     output = pd.concat(output_tables)
     output = output.reset_index()
-    output = output.drop([output.columns[0],output.columns[10],output.columns[11]], axis=1)
+    output = output.drop([output.columns[0],output.columns[10],output.columns[11],output.columns[21],output.columns[22]], axis=1)
     output = output.rename({
         'amihud': 'illiq',
         'ln_amihud': 'ln_illiq',
@@ -98,6 +98,7 @@ def main():
         'trend': 'gsv'
     }, axis=1)
     # print(output)
+    # print(output.columns)
     output.to_csv(output_file)
 
 if __name__ == '__main__':
