@@ -51,6 +51,8 @@ def main():
     for code in tqdm(codes):
         output_tables.append(process(code))
     output = pd.concat(output_tables)
+    output = output.reset_index()
+    output = output.drop([output.columns[0], output.columns[2]], axis=1)
     output.to_csv(output_file)
 
 if __name__ == '__main__':
