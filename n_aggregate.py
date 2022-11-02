@@ -7,8 +7,19 @@ from tqdm import tqdm
 input_amihud_fmt = './processed/{}/amihud.csv'
 input_hls_fmt = './processed/{}/hls.csv'
 input_market_cap_fmt = './processed/{}/market_cap_quarterly.csv'
+input_ret_fmt = './processed/{}/ret_quarterly.csv'
 input_stdv_fmt = './processed/{}/stdv.csv'
+input_trend_fmt = './processed/{}/trend.csv'
+
 output_file = './processed/aggregated.csv'
+
+input_wui = pd.read_csv('./rawdata/wui.csv').dropna()
+input_wui = input_wui.drop([input_wui.columns[1]], axis=1)
+input_wuivnm = pd.read_csv('./processed/wui_vnm.csv').dropna()
+input_vni = pd.read_csv('./processed/vni.csv').dropna()
+input_vni = input_vni.drop([input_vni.columns[0]], axis=1)
+
+crisis_quarter = set(['2007Q3','2007Q4','2008Q1','2008Q2','2008Q3','2008Q4','2009Q1','2009Q1','2020Q2','2020Q3','2020Q4','2021Q1','2021Q2','2021Q3','2021Q4'])
 
 def get_next_quarter(quarter):
     y_str, q_str = quarter.split('Q')
@@ -20,13 +31,21 @@ def get_next_quarter(quarter):
 def process(code: str):
     print(code)
     input_amihud = pd.read_csv(input_amihud_fmt.format(code))
+    input_amihud = input_amihud.drop(input_amihud.columns[0], axis=1)
+    # print(input_amihud)
     input_hls = pd.read_csv(input_hls_fmt.format(code)).dropna()
+    # print(input_hls)
     input_market_cap = pd.read_csv(input_market_cap_fmt.format(code)).dropna()
     input_market_cap = input_market_cap.drop([input_market_cap.columns[0], input_market_cap.columns[1], input_market_cap.columns[3]], axis=1).dropna()
+    # print(input_market_cap)
+    input_ret = pd.read_csv(input_ret_fmt.format(code)).dropna()
+    input_ret = input_ret.drop([input_ret.columns[0]], axis=1).dropna()
+    # print(input_ret)
     input_stdv = pd.read_csv(input_stdv_fmt.format(code)).dropna()
+    # print(input_stdv)
 
     output = input_amihud
-    for table in [input_hls, input_market_cap, input_stdv]:
+    for table in [input_hls, input_market_cap, input_ret, input_stdv, input_wui, input_wuivnm, input_vni]:
         output = pd.merge(output, table, on=['quarter'], how='inner')
 
     quarter = output['quarter']
@@ -38,7 +57,9 @@ def process(code: str):
         else:
             next_q = get_next_quarter(q)
     code_column = [code] * len(output)
+    crisis_column = quarter.apply(lambda x: x in crisis_quarter)
     output.insert(0, "code", code_column)
+    output['crisis'] = crisis_column
     return output
 
 def main():
@@ -48,12 +69,22 @@ def main():
     codes = [c[:3] for c in codes]
 
     output_tables = list()
-    for code in tqdm(codes):
+    for code in tqdm(codes[:3]):
         output_tables.append(process(code))
     output = pd.concat(output_tables)
     output = output.reset_index()
-    output = output.drop([output.columns[0], output.columns[2]], axis=1)
-    output.to_csv(output_file)
+    output = output.drop([output.columns[0],output.columns[9],output.columns[10]], axis=1)
+    output = output.rename({
+        'amihud': 'illiq',
+        'ln_amihud': 'ln_illiq',
+        's': 'hsl',
+        'ln_s': 'ln_hsl',
+        'price_diff_perc': 'ret',
+        'change_perc_mean': 'meanv',
+        'change_perc_stdv', 'stdv'
+    }, axis=1)
+    print(output)
+    # output.to_csv(output_file)
 
 if __name__ == '__main__':
     main()
