@@ -60,10 +60,10 @@ def process(code: str):
         all_quarters.append(nq)
 
     tmp = pd.DataFrame({'quarter': all_quarters})
-    print(tmp)
+    # print(tmp)
     amihud_quarterly = pd.merge(tmp, amihud_quarterly, on=['quarter'], how='left')
-    # amihud_quarterly.to_csv(output_file)
-    print(amihud_quarterly)
+    amihud_quarterly.to_csv(output_file)
+    # print(amihud_quarterly)
 
 def main():
     codes = None
@@ -75,5 +75,5 @@ def main():
         process(code)
 
 if __name__ == '__main__':
-    # main()
-    process('SJF')
+    main()
+    # process('BDB')

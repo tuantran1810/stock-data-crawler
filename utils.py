@@ -5,6 +5,7 @@ from tqdm import tqdm
 raw_events_fmt = './rawdata/{}/events.csv'
 shares_est_fmt = './processed/{}/shares_est.csv'
 stdv_fmt = './processed/{}/stdv.csv'
+amihud_fmt = './processed/{}/amihud.csv'
 quarterly_marker_cap_fmt = './rawdata/{}/price_daily.csv'
 
 def remove_file(path_fmt, codes):
@@ -52,7 +53,8 @@ def main():
 
     # remove_file(raw_events_fmt, codes)
     # remove_file(shares_est_fmt, codes)
-    remove_file(stdv_fmt, codes)
+    # remove_file(stdv_fmt, codes)
+    remove_file(amihud_fmt, codes)
     # from_q3_2007(quarterly_marker_cap_fmt, codes)
 
 
