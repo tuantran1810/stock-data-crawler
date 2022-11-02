@@ -19,7 +19,7 @@ def get_next_quarter(quarter):
 
 def process(code: str):
     print(code)
-    input_amihud = pd.read_csv(input_amihud_fmt.format(code)).dropna()
+    input_amihud = pd.read_csv(input_amihud_fmt.format(code))
     input_hls = pd.read_csv(input_hls_fmt.format(code)).dropna()
     input_market_cap = pd.read_csv(input_market_cap_fmt.format(code)).dropna()
     input_market_cap = input_market_cap.drop([input_market_cap.columns[0], input_market_cap.columns[1], input_market_cap.columns[3]], axis=1).dropna()
