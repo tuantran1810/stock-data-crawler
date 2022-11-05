@@ -47,7 +47,7 @@ def process(code: str):
     input_ret = input_ret.drop([input_ret.columns[0]], axis=1).dropna()
     # print(input_ret)
     input_shares_est = pd.read_csv(input_shares_est_fmt.format(code))
-    input_shares_est = pd.DataFrame({'quarter': input_shares_est['quarter'], 'lev': input_shares_est['lev']}).dropna()
+    input_shares_est = pd.DataFrame({'quarter': input_shares_est['quarter'], 'lev': input_shares_est['lev']*100}).dropna()
     # print(input_shares_est)
     input_stdv = pd.read_csv(input_stdv_fmt.format(code)).dropna()
     # print(input_stdv)
