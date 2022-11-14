@@ -42,6 +42,7 @@ def process(code: str):
     # print(input_hls)
     input_market_cap = pd.read_csv(input_market_cap_fmt.format(code)).dropna()
     input_market_cap = input_market_cap.drop([input_market_cap.columns[0], input_market_cap.columns[1], input_market_cap.columns[3]], axis=1).dropna()
+    input_market_cap = input_market_cap.drop(['lev'], axis=1, errors='ignore')
     # print(input_market_cap)
     input_ret = pd.read_csv(input_ret_fmt.format(code)).dropna()
     input_ret = input_ret.drop([input_ret.columns[0]], axis=1).dropna()
@@ -87,10 +88,17 @@ def main():
 
     output_tables = list()
     for code in tqdm(final_codes):
-        output_tables.append(process(code))
+        data = process(code)
+        tmp = data.groupby('code').mean()
+        lev = tmp['lev'][0]
+        if np.isnan(lev):
+            print("nan nè")
+            return
+        output_tables.append(data)
     output = pd.concat(output_tables)
     output = output.reset_index()
-    output = output.drop([output.columns[0],output.columns[10],output.columns[11],output.columns[21],output.columns[22]], axis=1)
+    print(output.columns)
+    output = output.drop(['index','price','price_diff'], axis=1)
     output = output.rename({
         'amihud': 'illiq',
         'ln_amihud': 'ln_illiq',
@@ -109,4 +117,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # process('SJF')
+    # print(process('HPG'))
