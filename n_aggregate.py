@@ -77,10 +77,16 @@ def main():
     codes = None
     with open('codes.txt', 'r') as fd:
         codes = fd.readlines()
-    codes = [c[:3] for c in codes]
+
+    exclude_codes = None
+    with open('exclude_codes.txt', 'r') as fd:
+        exclude_codes = fd.readlines()
+
+    exclude_codes = set([c[:3] for c in exclude_codes])
+    final_codes = [c[:3] for c in filter(lambda x: x[:3] not in exclude_codes, codes)]
 
     output_tables = list()
-    for code in tqdm(codes):
+    for code in tqdm(final_codes):
         output_tables.append(process(code))
     output = pd.concat(output_tables)
     output = output.reset_index()
